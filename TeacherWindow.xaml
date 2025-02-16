@@ -1,0 +1,43 @@
+﻿<Window x:Class="UBYS_App.TeacherWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Teacher Login"
+        Height="500" Width="850"
+        WindowStartupLocation="CenterScreen"
+        Background="#1E1E2F">
+
+    <Grid>
+
+        <Border Background="#2C2C3A" Height="80" VerticalAlignment="Top">
+            <TextBlock Text="Teacher Login Panel"
+                       Foreground="White" FontSize="22" FontWeight="Bold"
+                       VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </Border>
+
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="320">
+
+
+            <TextBox x:Name="TeacherUsernameTextBox"
+                     Width="300" Height="40"
+                     Foreground="Gray" Background="#2C2C3A"
+                     BorderBrush="#4A4A5E" BorderThickness="1"
+                     Text="Email: teacher@university.edu"
+                     Margin="0,10,0,10" Padding="10"/>
+
+
+            <PasswordBox x:Name="TeacherPasswordBox"
+                         Width="300" Height="40"
+                         Foreground="Gray" Background="#2C2C3A"
+                         BorderBrush="#4A4A5E" BorderThickness="1"
+                         Margin="0,0,0,10" Padding="10"/>
+
+
+            <Button Content="Log In"
+                    Height="45" Width="300"
+                    Background="#0078D4" Foreground="White"
+                    BorderThickness="0" FontSize="16"
+                    Cursor="Hand"/>
+        </StackPanel>
+    </Grid>
+</Window>
