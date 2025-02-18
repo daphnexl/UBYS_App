@@ -9,6 +9,8 @@ namespace UBYS_App
         public ICommand OpenTeacherWindowCommand { get; }
         public ICommand OpenAdminWindowCommand { get; }
 
+        public int Github;
+
         public MainWindowViewModel() {
             OpenStudentWindowCommand = new RelayCommand(OpenStudentWindow);
             OpenTeacherWindowCommand = new RelayCommand(OpenTeacherWindow);
